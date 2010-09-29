@@ -5,11 +5,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "pooled-curb"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{High-performance HTTP requests for a multi-threaded environment}
+    gem.description = %Q{When consuming web services, HTTP performance can be greatly improved if you enable keep-alive 
+    and the right HTTP library.\nPooled-curb helps to solve this implementing a pool of Curb (libcurl) objects and providing a 
+    pleasent API to do HTTP requests through the pool.}
     gem.email = "angel@vlex.com"
     gem.homepage = "http://github.com/angelf/pooled-curb"
-    gem.authors = ["Angel"]
+    gem.authors = ["Angel Faus"]
+    gem.add_dependency "common-pool", ">= 0"    
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end

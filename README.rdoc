@@ -1,6 +1,17 @@
 = pooled-curb
 
-Description goes here.
+High-performance HTTP requests for a multi-threaded environment. 
+
+When consuming web services, HTTP performance can be greatly improved if you enable keep-alive 
+and the right HTTP library.
+ 
+But reusing HTTP connections can be challenging in a multi-threaded environment, where you want
+to reuse connections created from another thread, or on a single-threaded environment where several
+code points connect to the same host. 
+
+Pooled-curb helps to solve this implementing a pool of Curb (libcurl) objects and providing a 
+pleasent API to do HTTP requests through the pool. 
+
 
 == Note on Patches/Pull Requests
  
@@ -14,4 +25,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Angel. See LICENSE for details.
+Copyright (c) 2010 Angel Faus. See LICENSE for details.
