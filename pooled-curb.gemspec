@@ -27,6 +27,8 @@ Pooled-curb helps to solve this implementing a pool of Curb (libcurl) objects an
      "Rakefile",
      "VERSION",
      "lib/pooled-curb.rb",
+     "lib/pooled_curb_datasource.rb",
+     "pooled-curb.gemspec",
      "test/helper.rb",
      "test/test_pooled-curb.rb"
   ]

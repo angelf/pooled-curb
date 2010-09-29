@@ -1,4 +1,5 @@
 require 'common_pool'
+require 'curb'
 require 'pooled_curb_datasource'
 
 # wrapper on top of curb to ensure we reuse the Curl objects, and thus make sure we  
